@@ -145,7 +145,7 @@ header {
     }
 }
 
-#linhaSobreMim {
+#SobreMim {
     /* position: absolute;
     top: 70rem;
     left: 50%;
@@ -239,7 +239,7 @@ header {
     }
 }
 
-#linhaProjetos {
+#Projetos {
     /* position: absolute;
     top: 132rem;
     left: 50%;
@@ -271,7 +271,7 @@ header {
 .Projetos h1 {
     margin: 2rem 0px;
 }
-#linhaContato {
+#Contato {
     height: 1px;
     border: 0px;
     position: relative !important;
