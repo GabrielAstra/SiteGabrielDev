@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleYtb.css">
+    <script src="smooth.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Projeto Baixador De Vídeos</title>
+</head>
+<body>
+
+  <a id="inicio"></a>
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgba(255, 255, 255, 0.9);">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Gabriel Vinícius</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Introdução</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#uso">Uso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#material">Material</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/GabrielAstra" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://www.linkedin.com/in/gabriel-vin%C3%ADcius-30a443268/" target="_blank">
+                      <i class="fab fa-linkedin"></i> LinkedIn
+                  </a>
+              </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  
+<div id="meuPopup" class="popup">
+  <h2>Aviso</h2>
+  <p>PÁGINA EM CONTRUÇÃO!</p>
+  <p>Este é um pop-up de aviso que desaparecerá automaticamente após 5 segundos.</p>
+</div>
+
+
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+
+      <div class="introducao">
+        <h1>INTRODUÇÃO</h1>
+        <p>Bom, tudo começou com a vontade de apenas criar algo que eu poderia utilizar e publicar na internet para também poderem utilizar,
+            então pensei em um projeto que baixasse vídeos e áudios do YouTube, comecei a procurar por bibliotecas que pudessem me ajudar, 
+            tanto com documentação como com códigos. Encontrei a biblioteca YoutubeExplode, logo comecei a pesquisar por vídeos e Encontrei
+            bastantes tutoriais indianos que me ajudaram muito, comecei criando uma API e testando no Swagger, quando chegou ao ponto que ela
+            estava funcionando perfeitamente para os meus requisitos decidi passar ela para um projeto ASP.NET MVC, comecei a fazer a parte visual
+            dela. A principio 
+        </p>
+      </div>
+
+
+      <div class="youtubeimg">
+        <img src="images/you.jpg" alt="">
+      </div>
+
+
+
+<hr id ="linhaUso"class = "linhaUso">
+
+
+<a id="uso"></a>
+      
+<div class="uso">
+  <h1>Uso</h1>
+  <p>Utilizamos a biblioteca YouTubeExplode para fazer o download de arquivos .mp3 e .mp4 de vídeos do YouTube.
+
+    A página inicial é essa:</p>
+
+
+  <img src="images/68747470733a2f2f692e696d6775722e636f6d2f5a556565347a382e706e67.png" alt="">
+
+  <p class = "usoBaixo">Onde o campo "URL da Mídia" irá ler a URL especificada e irá fazer o download do arquivo de acordo com o tipo de mídia especificada.
+
+    Em baixo temos o "Histórico de Downloads" onde armazena por 30 minutos no cachê do navegador as URL's que foram copiadas e baixadas. Como na imagem a baixo printada após um download:</p>
+
+    <img src="images/222.png" alt="">
+</div>
+<hr id ="material">
+
+<div class="material">
+  <h1>Material</h1>
+  <p>Utilizamos o ASP.NET Core 7.0 em um projeto MVC, a biblioteca YouTubeExplode e ambientes padrões do framework.</p>
+  <p class = "dir">Diretórios:</p>
+
+  <div class="lista">
+    <ul>
+      <li>Diretório biblioteca utilizada: <a target="_blank" href="https://github.com/Tyrrrz/YoutubeExplode.git">github.com/Tyrrrz/YoutubeExplode.git</a></li>
+      <li>Diretório do projeto feito em ASP.NET MVC: <a target="_blank" href="https://github.com/GabrielAstra/YtbDownlMvc.git">github.com/GabrielAstra/YtbDownlMvc.git</a> </li>
+      <li>Material utilizado: <a target="_blank" href="https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/operators/conditional-operator">Operador Ternário</a></li>
+      <li>Material utilizado: <a target="_blank" href="https://learn.microsoft.com/pt-br/dotnet/api/system.io.file?view=net-7.0">System.IO</a></li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2023 Gabriel Vinícius. Contato: gvlc2013@gmail.com </p>
+</footer>
+
+<script>
+  
+  document.addEventListener("DOMContentLoaded", function() {
+      const navLinks = document.querySelectorAll(".navbar-nav a");
+      for (const link of navLinks) {
+          link.addEventListener("click", smoothScroll);
+      }
+
+      function smoothScroll(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+              targetElement.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start"
+              });
+          }
+      }
+  });
+
+</script>
+
+<script>
+
+  window.onload = function() {
+      var meuPopup = document.getElementById("meuPopup");
+      meuPopup.style.display = "block";
+
+
+      setTimeout(function() {
+          meuPopup.style.display = "none";
+      }, 5000); 
+  }
+</script>
+    
+</body>
+</html>

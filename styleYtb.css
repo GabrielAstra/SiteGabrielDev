@@ -1,0 +1,135 @@
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+a.navbar-brand img {
+    object-fit: cover; 
+}
+
+.introducao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    margin: 0 auto; 
+}
+
+.introducao h1, p {
+    text-align: center;
+
+}
+
+.youtubeimg img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.youtubeimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; 
+    height: 200px;
+    
+    
+}
+
+.linhaUso{
+    display: flex;
+    margin-top: 170px;
+}
+.uso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    margin: 0 auto; 
+    margin-top: 200px;
+}
+
+.uso img{
+    width: 1000px;
+    height: 1000px;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    margin-top: -100px;
+}
+
+.usoBaixo{
+    display: flex;
+    margin-top: -190px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.material{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    margin: 0 auto; 
+    margin-top: 200px;
+}
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 800px;
+    margin: 0 auto; 
+}
+
+.dir{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 721px;
+    margin: 0 auto; 
+}
+
+
+
+a {
+    color: black; 
+    text-decoration: none; 
+    transition: color 0.3s, text-decoration 0.3s; 
+}
+
+
+a:hover {
+    text-decoration: underline; 
+    color: blue; 
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 300px;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Vinícius</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/cab7833672.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class = "header">
+        <a href="#" class="menu" title="Blog">Gabriel Vinícius</a>
+
+        <nav class="navbar">
+            <a href="#linhaSobreMim">Sobre Mim</a>
+            <a href="#linhaProjetos">Projetos</a>
+            <a href="#linhaContato">Contato</a>
+            <a href="https://github.com/GabrielAstra" title="GitHub" target="_blank" class="gitLogo"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gabriel-vin%C3%ADcius-30a443268/" title="LinkedIN" target="_blank" class="linkedinLogo"><i
+                    class="fab fa-linkedin"></i></a>
+        </nav>
+    </header>
+    <section>
+        <div class="titulo">
+            <h1 class="nomePrincipal">GABRIEL VINÍCIUS</h1>
+        </div>
+    </section>
+    <section>
+        <div class="setaBaixo">
+            <i class="fas fa-circle-arrow-down"></i>
+        </div>
+    </section>
+    <hr id="linhaSobreMim">
+    <section>
+        <div class="sobreMim">
+            <h1>Sobre mim</h1>
+        </div>
+        <div class = "imgSobreMim">
+            <img src="images/wallhaven-4v2rw3.jpg" alt="">
+        </div>
+        <div class="euImagem">
+            <img src="images/f6c9ef0f7f3e690e335b3731ff88b91f.jpg" alt="">
+        </div>
+        <div class="txtSobreMim">
+            <p>Olá, sou Gabriel Vinícius Lemes de Carvalho e sou desenvolvedor C# .NET. 
+                No momento trabalho em projetos autônomos e projetos para fins de estudos. 
+                Este site é meu portfólio pessoal e blog, onde compartilho minhas idéias e experiências no mundo da tecnologia, 
+                bem como meus pensamentos sobre vários tópicos. 
+                Estou sempre procurando aprender mais e estou animado para compartilhar o conhecimento que adquiri com o mundo.  </p>
+        </div>
+    
+    </section>
+    <hr id="linhaProjetos">
+    <section>
+        <div class="Projetos">
+            <h1>Projetos</h1>
+        </div>
+        <div class="container">
+            <div class="card">
+                <a href="projetoCsharp.html" target="_blank"><img src="images/EywAb4SW8AAzZN7.jpeg" alt="" ></a>
+                <div class="content">
+                    <h3>Sobre C#</h3>
+                    <p>Introdução a essa linguagem robusta e tipada</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="projetoVisual.html" target="_blank"><img src="images/wp6734435.png" alt=""></a>
+                <div class="content">
+                    <h3>VSCode</h3>
+                    <p>O porquê eu uso o VisualStudioCode como meu editor de código</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/code2.jpg" alt="">
+                <div class="content">
+                    <h3>03</h3>
+                    <p>EM BREVE</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/code3.jpg" alt="">
+                <div class="content">
+                    <h3>04</h3>
+                    <p>EM BREVE</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <hr id="linhaContato">
+    <!-- <section>
+        <div class="contato">
+            <h1>Contato</h1>
+            <p class = "email"><i class="fa-solid fa-envelope"></i>E-MAIL: gvlc2013@gmail.com</p>
+            <p class = "blog"><i class="fa-solid fa-blog"></i>BLOG: GabrielViníciusBlog.com</p>
+            <p class = "instagram"><i class="fa-brands fa-instagram"></i>INSTAGRAM: Gabriel_aspirians</p>
+        </div>
+    </section> -->
+    <section>
+        <div class="profile-card">
+            <div class="profile-content">
+                <div class="profile-picture">
+                    <img src="images/Screenshot_20210614-223909.png" alt="">
+                </div>
+                <h2 class="profile-name">
+                    Gabriel Vinícius
+                </h2>
+                <p class="profile-description">
+                    Bom, isso é o mínimo sobre mim, até mais.
+                </p>
+                <ul class="social-icons">
+                    <li>
+                        <a class="linkedin" href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class = "email "href="#">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="insta" href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="efeitoVanilla.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+    <footer>
+        <p>&copy; 2023 Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+
+</html>
