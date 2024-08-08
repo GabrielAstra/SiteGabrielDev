@@ -331,6 +331,8 @@ header {
 
 footer{
     background-color: #333;
+    background: rgba(5, 0, 0, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     color: #fff;
     padding: 20px;
     text-align: center;
