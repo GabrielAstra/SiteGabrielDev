@@ -1,0 +1,256 @@
+body {
+    background-image: url("images/milad-fakurian-lz8j9lMe-oA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    position: relative; 
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+body {
+    position: relative; 
+}
+
+body::before {
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: -1; 
+}
+
+.container, .profile-card, .header, .InitialScreen, .setaBaixo, .txtSobreMim, .profile-content, .timeline, .linha-cards ,.containerTitulo{
+    position: relative;
+    z-index: 2; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
+}
+
+.containerTitulo {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 80px; 
+}
+.cardNew {
+    background: rgba(255, 255, 255, 0.4); 
+    border-radius: 20px;
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); 
+    padding: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    overflow: hidden;
+    min-width: 250px; 
+    width: auto;
+    margin: 20px; 
+}
+
+
+
+.cardNew-image-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.cardNew-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.cardNew:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.cardNew-content h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.75em;
+    margin-bottom: 15px;
+    color: #373630; 
+}
+
+.cardNew-content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+
+.cardNew-content {
+    color: #fff;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.containerTitulo h1 {
+    font-family: 'Bodoni Moda', serif; 
+    font-size: 2.5rem; 
+    margin-top: 80px; 
+    text-align: center; 
+    color: #fff; 
+}
+.cardNew-content i {
+    display: block;
+    margin: 10px auto;
+    font-size: 2em;
+    color: #373630; 
+}
+.cardNew:hover .cardNew-content {
+    color: #f0f0f0;
+    filter: brightness(1.2);
+}
+@media (max-width: 768px) {
+    .cardNew {
+        min-width: 200px;
+        padding: 15px;
+    }
+
+    .cardNew-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6); 
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px); 
+    z-index: 1000; 
+}
+
+.header .menu {
+    color: white;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    gap: 1rem;
+}
+.cardNew-content p {
+    font-family: 'Merriweather', serif;
+}
+
+.cardNew-content h2 {
+    font-family: 'Merriweather', serif;
+}
+
+.navbarLinks {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbarLinks::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbarLinks:hover::after {
+    transform: scaleX(1);
+}
+
+.gitLogo, .linkedinLogo {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    transition: color 0.3s;
+}
+
+.gitLogo:hover, .linkedinLogo:hover {
+    color: #ddd;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; 
+    left: 50%;
+    margin-left: -110px; 
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip i {
+    color: #333;
+    font-size: 1.2em;
+}

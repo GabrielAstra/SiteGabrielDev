@@ -67,6 +67,7 @@
         <div class="sobreMim">
             <h1>Sobre mim</h1>
         </div>
+        
         <div class="relative">
             <div class = "imgSobreMim">
                 <img src="images/wallhaven-4v2rw3.jpg" alt="">
@@ -75,10 +76,40 @@
                 <img src="images/WhatsApp Image 2024-01-20 at 13.01.02.jpeg" alt="">
             </div>
         </div>
+        <div class="linha-cards"></div>
+        <div class="timeline">
+            <div class="timeline-event">
+                <div class="timeline-point"></div>
+                <div class="timeline-content">
+                    <h3>2021</h3>
+                    <p>Início da minha jornada como desenvolvedor.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-point"></div>
+                <div class="timeline-content">
+                    <h3>2022</h3>
+                    <p>Desenvolvedor full-stack .NET na Discipulus.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-point"></div>
+                <div class="timeline-content">
+                    <h3>2023</h3>
+                    <p>Desenvolvedor full-stack .NET na PickNGo!.</p>
+                </div>
+            </div>
+            <div class="timeline-event">
+                <div class="timeline-point"></div>
+                <div class="timeline-content">
+                    <h3>2024</h3>
+                    <p>Desenvolvedor full-stack .NET na RisePay.</p>
+                </div>
+            </div>
+        </div>
         <div class="txtSobreMim">
-            <p>Olá! Chamo-me Gabriel, sou desenvolvedor full-stack .NET e ASP.Net, com conhecimentos aprofundados em C# e Sql, também tenho conhecimento em diversas tecnologias como Docker, 
-                Git, Python, React, Linux, entre algumas outras. Sempre buscando me atualizar e aprimorar de acordo com a necessidade do mercado.
-                Atualmente sou desenvolvedor fullstack na PickNGo!, também trabalho em um projeto à parte Discipulus. Quer trabalhar comigo ? Entre em contato na área Contato.
+            <p>Olá, sou o Gabriel: Desenvolver full-stack com conhecimentos aprofundados em .NET e Sql, também tenho conhecimentos em diversas tecnologias que o mercado demanda.
+                Sempre buscando me aprimorar de acordo com a necessidade do mercado. Além de sempre moldar minhas soft skills também. Quer trabalhar comigo ? Entre em contato na área Contato.
             </p>
         </div>
     
@@ -97,10 +128,10 @@
                 </div>
             </div>
             <div class="card">
-                <a href="#" target="_blank"><img src="images/wp6734435.png" alt=""></a>
+                <a href="poemas.html" target="_blank"><img src="images/wallhaven-0qyvvr.png" alt=""></a>
                 <div class="content">
-                    <h3>04</h3>
-                    <p>EM BREVE</p>
+                    <h3>Poemas</h3>
+                    <p>Aqui um espaço para você ler alguns poemas, espero que ajude de alguma forma ❤️</p>
                 </div>
             </div>
             <div class="card">
@@ -169,6 +200,43 @@
     <script>
         VanillaTilt.init(document.querySelectorAll(".card"));
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sobreMimSection = document.querySelector('.sobreMim');
+            const timelineEvents = document.querySelectorAll('.timeline-event');
+            const linhaCards = document.querySelector('.linha-cards');
+        
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+        
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        timelineEvents.forEach((event, index) => {
+                            setTimeout(() => {
+                                event.classList.add('show');
+                            }, index * 1000); 
+                        });
+        
+                        setTimeout(() => {
+                            linhaCards.style.width = '75%'; 
+                        }, 1000); 
+        
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            };
+        
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+            observer.observe(sobreMimSection);
+        });
+        
+        
+    </script>
+    
     <footer>
         <p>&copy; Always in update</p>
     </footer>
